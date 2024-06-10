@@ -18,8 +18,11 @@ interface ProjectsProps {
 export default function Projects({ projects }: ProjectsProps) {
   return (
     <div className="flex flex-col">
+      <h2 className="text-2xl font-bold">Projects</h2>
       {projects.map((project) => (
-        <ProjectCard key={project.title} {...project} />
+        <div key={project.title} className="mb-2">
+          <ProjectCard {...project} />
+        </div>
       ))}
     </div>
   );

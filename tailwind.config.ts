@@ -8,7 +8,7 @@ const config: Config = {
   ],
   daisyui: {
     themes: [
-      "fantasy", "sunset"
+      "nord", "sunset"
     ],
   },
   plugins: [

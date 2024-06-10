@@ -9,7 +9,7 @@ export default function Intro() {
         temporibus repellat aperiam nesciunt, rerum illum laudantium voluptatum
         veniam dicta eos enim?
       </p>
-      <div className="flex flex-row space-x-4">
+      <div className="flex flex-row justify-center space-x-4">
         <a href="https://github.com/taylormerwin" rel="noopener noreferrer">
           <img src="github.svg" alt="Github" />
         </a>

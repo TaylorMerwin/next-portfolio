@@ -12,23 +12,26 @@ interface ProjectCardProps {
 
 export default function ProjectCard({ title, description, imageUrl, liveUrl, codeUrl, tags }: ProjectCardProps) {
   return (
-    <div className="flex md:flex-row overflow-hidden p-4">
-      <div className="p-4">
+    <div className="card card-side">
+      <figure className='ml-4'>
         <Image
           src={imageUrl}
           alt={title}
           width={100}
           height={100}
+          className="object-cover rounded-lg"
         />
-      </div>
+      </figure>
 
-      <div className="p-4 flex flex-col justify-between"> {/* Content Container (2/3 width) */}
+      <div className="card-body"> {/* Content Container (2/3 width) */}
         <div>
-          <h3 className="text-xl font-semibold mb-2">{title}</h3>
-          <p className="text-gray-700 mb-4">{description}</p>
+          <a href={codeUrl} target="_blank" rel="noopener noreferrer">
+            <h3 className="card-title hover:text-secondary">{title}</h3>
+          </a>
+          <p className="text-gray-700 mt-2 mb-4">{description}</p>
         </div>
 
-        <div className="flex flex-wrap gap-2 mt-4"> {/* Tags */}
+        <div className="card-actions">
           {tags.map((tag) => (
             <div key={tag} className="badge badge-lg badge-neutral">
               {tag}
@@ -36,7 +39,8 @@ export default function ProjectCard({ title, description, imageUrl, liveUrl, cod
           ))}
         </div>
 
-      </div> 
+        {liveUrl && <a href={liveUrl}><p className='text-primary'>View Live</p></a>}
+      </div>
     </div>
   );
 }
