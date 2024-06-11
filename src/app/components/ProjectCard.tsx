@@ -26,9 +26,9 @@ export default function ProjectCard({ title, description, imageUrl, liveUrl, cod
       <div className="card-body"> {/* Content Container (2/3 width) */}
         <div>
           <a href={codeUrl} target="_blank" rel="noopener noreferrer">
-            <h3 className="card-title hover:text-secondary">{title}</h3>
+            <h3 className="card-title hover:text-primary">{title}</h3>
           </a>
-          <p className="text-gray-700 mt-2 mb-4">{description}</p>
+          <p className="mt-2 mb-4">{description}</p>
         </div>
 
         <div className="card-actions">

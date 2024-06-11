@@ -44,7 +44,6 @@ const projectData = [
 export default function Home() {
   return (
     <>
-    <Header/>
     <Intro/>
     <Projects projects={projectData}/>
     </>

@@ -1,28 +1,32 @@
 import React from "react";
+import Header from "./Header";
+import Socials from "./Socials";
+import Avatar from "./Avatar";
 
 export default function Intro() {
   return (
-    <>
-      <p className="prose">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam
-        corporis aliquam libero nam ratione commodi quo eveniet maxime
-        temporibus repellat aperiam nesciunt, rerum illum laudantium voluptatum
-        veniam dicta eos enim?
-      </p>
-      <div className="flex flex-row justify-center space-x-4">
-        <a href="https://github.com/taylormerwin" rel="noopener noreferrer">
-          <img src="github.svg" alt="Github" />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/taylormerwin/"
-          rel="noopener noreferrer"
-        >
-          <img src="linkedin.svg" alt="LinkedIn" />
-        </a>
-        <a href="https://twitter.com/taylormerwin" rel="noopener noreferrer">
-          <img src="twitterx.svg" alt="Twitter" />
-        </a>
+    <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center md:w-2/3">
+        <Header />
+        <div className="flex flex-col md:flex-row md:items-center">
+          <div className="md:w-2/3 flex justify-center md:pl-8">
+            <Avatar />
+          </div>
+          <div className="">
+            <p className="ml-4 mr-2 m-8">
+              I am a recent Computer Science and Systems graduate from the University of Washington Tacoma with a
+              passion for building user-centered experiences for the web and
+              mobile.<br/><br/>Seeking opportunities to leverage my expertise to
+              create modern and scalable applications.<br/><br/>Experienced in
+              back-end development with Node.js and Express.js, and front-end
+              development with React and Tailwind CSS.<br/><br/>I can be reached via social media or at <a className="hover:text-primary" href="mailto:taylor.merwin@gmail.com">taylor.merwin@gmail.com</a>
+            </p>
+          </div>
+        </div>
+        <div className="flex justify-center">
+          <Socials />
+        </div>
       </div>
-    </>
+    </div>
   );
 }
