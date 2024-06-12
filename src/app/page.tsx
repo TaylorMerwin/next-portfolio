@@ -5,36 +5,36 @@ import Projects from "./components/Projects";
 
 const projectData = [
   {
-    title: "Project 1",
-    description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+    title: "Bloggy - Technical blogging platform",
+    description: "Full stack blogging platform with user authentication and full CRUD functionality.",
     imageUrl: "/placeholder.jpg",
     liveUrl: "https://www.google.com",
     codeUrl: "...",
-    tags: ["React", "Tailwind CSS"],
+    tags: ["Node.js", "TypeScript", "Tailwind", "Postgres", "GCP"],
   },
   {
-    title: "Project 2",
+    title: "HuskyHaze - Weather and news application for Android",
     description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
     imageUrl: "/placeholder.jpg",
     liveUrl: "",
     codeUrl: "...",
-    tags: ["PHP", "JQuery"],
+    tags: ["Kotlin", "XML", "Retrofit", "PHP", "SQL"],
   },
   {
-    title: "Project 3",
+    title: "BookStore API - RESTful API for a bookstore",
     description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
     imageUrl: "/placeholder.jpg",
     liveUrl: "https://www.bing.com",
     codeUrl: "...",
-    tags: ["Python", "Django", "Tailwind CSS", "React"]
+    tags: ["Express", "Postgres", "Docker", "Postman"]
   },
   {
-    title: "Project 4",
+    title: "Crafty Companion - DIY Project Tracker",
     description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
     imageUrl: "/placeholder.jpg",
     liveUrl: "https://www.duckduckgo.com",
     codeUrl: "...",
-    tags: ["HTML", "CSS"],
+    tags: ["Java", "Swing", "JUnit"],
   }
 ];
 
