@@ -14,12 +14,10 @@ export default function ProjectCard({ title, description, imageUrl, liveUrl, cod
   return (
     <div className="card card-side">
       <figure className='ml-4'>
-        <Image
+        <img
           src={imageUrl}
           alt={title}
-          width={100}
-          height={100}
-          className="object-cover rounded-lg"
+          className="object-cover rounded-lg h-24 md:h-32 lg:h-48"
         />
       </figure>
 
