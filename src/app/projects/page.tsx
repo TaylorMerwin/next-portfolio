@@ -1,13 +1,11 @@
 import Projects from "@/components/Projects";
 import Menu from "@/components/Menu";
-import { subtle } from "crypto";
 
 const projectData = [
   {
     title: "Bloggy",
     subtitle: "Technical blogging platform",
-    description:
-      "Full stack blogging platform with user authentication and full CRUD functionality.",
+    description: "Full stack blogging platform with user authentication and full CRUD functionality.",
     imageUrl: "/placeholder.jpg",
     liveUrl: "https://bloggy-414621.wl.r.appspot.com/",
     codeUrl: "https://github.com/TaylorMerwin/bloggy",
@@ -24,7 +22,7 @@ const projectData = [
   },
   {
     title: "BookStore API",
-    subtle: "RESTful API for a bookstore",
+    subtitle: "RESTful API for a bookstore",
     description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
     imageUrl: "/placeholder.jpg",
     liveUrl: "",
@@ -41,7 +39,6 @@ const projectData = [
     tags: ["Java", "Swing", "JUnit"],
   },
 ];
-
 
 export default function Home() {
   return (
