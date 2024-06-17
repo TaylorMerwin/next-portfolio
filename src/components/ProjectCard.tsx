@@ -3,6 +3,7 @@ import Image from 'next/image';
 
 interface ProjectCardProps {
   title: string;
+  subtitle: string;
   description: string;
   imageUrl: string;
   liveUrl?: string;
@@ -10,16 +11,16 @@ interface ProjectCardProps {
   tags: string[];
 }
 
-export default function ProjectCard({ title, description, imageUrl, liveUrl, codeUrl, tags }: ProjectCardProps) {
+export default function ProjectCard({ title, subtitle, description, imageUrl, liveUrl, codeUrl, tags }: ProjectCardProps) {
   return (
-    <div className="card card-side">
-      <figure className='relative ml-4 overflow-auto hidden md:block'>
+    <div className="card md:card-side shadow-md">
+      <figure className="">
         <Image
           src={imageUrl}
           alt={title}
-          width={50}
-          height={50}
-          className="object-scale-down rounded-sm hidden md:block"
+          width={200}
+          height={200}
+          className="h-auto rounded-md"
         />
       </figure>
 
@@ -28,18 +29,20 @@ export default function ProjectCard({ title, description, imageUrl, liveUrl, cod
           <a href={codeUrl} target="_blank" rel="noopener noreferrer">
             <h3 className="card-title hover:text-primary">{title}</h3>
           </a>
-          <p className="mt-2 mb-4">{description}</p>
+          <p className="text-sm text-info">{subtitle}</p>
+          <p className="">{description}</p>
+          {liveUrl && <a href={liveUrl}><p className='text-primary'>View Live</p></a>}
+
         </div>
 
-        <div className="card-actions">
+        <div className="card-actions justify-end">
+
           {tags.map((tag) => (
-            <div key={tag} className="badge badge-lg badge-neutral">
+            <div key={tag} className="badge badge-md badge-outline">
               {tag}
             </div>
           ))}
         </div>
-
-        {liveUrl && <a href={liveUrl}><p className='text-primary'>View Live</p></a>}
       </div>
     </div>
   );

@@ -3,6 +3,7 @@ import ProjectCard from "./ProjectCard";
 
 interface Project {
   title: string;
+  subtitle: string;
   description: string;
   imageUrl: string;
   liveUrl?: string;
@@ -17,17 +18,17 @@ interface ProjectsProps {
 
 export default function Projects({ projects }: ProjectsProps) {
   return (
+    <>
+    <h2 className="text-3xl font-bold text-center mt-12 mb-12">projects</h2>
     <div className="flex flex-col">
-      <div className="flex flex-col md:items-center md:mt-8">
-      <h2 className="text-2xl font-bold ml-8 ">projects</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="flex flex-col items-center">
       {projects.map((project) => (
-        <div key={project.title} className="mb-2">
+        <div key={project.title} className="mb-8 w-3/4 lg:w-1/2 justify-center">
           <ProjectCard {...project} />
         </div>
       ))}
-      </div>
     </div>
     </div>
+    </>
   );
 }
