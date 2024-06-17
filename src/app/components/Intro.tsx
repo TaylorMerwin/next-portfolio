@@ -21,6 +21,7 @@ export default function Intro() {
               back-end development with Node.js and Express.js, and front-end
               development with React and Tailwind CSS.<br/><br/>I can be reached via social media or at <a className="hover:text-primary" href="mailto:taylor.merwin@gmail.com">taylor.merwin@gmail.com</a>
             </p>
+            <a href="/taylor-merwin-resume.pdf"><button className="btn btn-accent text-base-100">Download Resume</button></a>
           </div>
         </div>
         <div className="flex justify-center">

@@ -3,7 +3,7 @@ import React from "react";
 export default function Socials() {
   return (
     <>
-      <div className="flex flex-row justify-center space-x-8 lg:space-x-12">
+      <div className="flex flex-row justify-center space-x-8 lg:space-x-12 mb-8">
         <a href="https://github.com/taylormerwin" rel="noopener noreferrer">
           <img src="github.svg" alt="Github" />
         </a>

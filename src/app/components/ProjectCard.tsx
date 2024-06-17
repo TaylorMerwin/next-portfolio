@@ -13,11 +13,13 @@ interface ProjectCardProps {
 export default function ProjectCard({ title, description, imageUrl, liveUrl, codeUrl, tags }: ProjectCardProps) {
   return (
     <div className="card card-side">
-      <figure className='ml-4'>
-        <img
+      <figure className='relative ml-4 overflow-auto hidden md:block'>
+        <Image
           src={imageUrl}
           alt={title}
-          className="object-cover rounded-lg h-24 md:h-32 lg:h-48"
+          width={50}
+          height={50}
+          className="object-scale-down rounded-sm hidden md:block"
         />
       </figure>
 
